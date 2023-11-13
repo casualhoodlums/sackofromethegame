@@ -3,7 +3,7 @@
 ### Basic Ideas
 
 - Top down Hack and Slash
-- You play as Carthage in a Siege of Rome Scenario
+- You play as Carthage or the Visigoths in a Siege of Rome Scenario
 - Roaming the streets of rome whilst murdering all KINDS of romans (willing combatants btw) 
 
 ### Grameplay
@@ -19,3 +19,5 @@
 ### Gramphics
 
 - 2D Basic art to start
+- slowly ramp up the effects with particles for more polish
+- shaders?
