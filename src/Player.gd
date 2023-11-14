@@ -1,10 +1,29 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
+@export var SPEED = 200.0
+@export var ACCELERATION = 1000.0
+@export var FRICTION = 500.0
+
+@export var MAX_VELOCITY = Vector2(200.0, 200.0)
+@export var MIN_VELOCITY = Vector2.ZERO
 
 func _physics_process(delta):
-
-	pass
+	var input_vector = Vector2.ZERO
+	input_vector.y = Input.get_axis("move_up", "move_down")
+	input_vector.x = Input.get_axis("move_left", "move_right")
+	
+	input_vector = input_vector.normalized()
+	if input_vector:
+		# velocity = velocity.move_toward(input_vector * SPEED, ACCELERATION * delta)
+		velocity.x = move_toward(velocity.x, SPEED * input_vector.x, ACCELERATION * delta)
+		velocity.y = move_toward(velocity.y, SPEED * input_vector.y, ACCELERATION * delta)
+	else:
+		velocity.x = move_toward(velocity.x, 0, FRICTION * delta)
+		velocity.y = move_toward(velocity.y, 0, FRICTION * delta)
+		
+		
+	print(velocity)
+	move_and_slide()
 	# # Get the input direction and handle the movement/deceleration.
 	# # As good practice, you should replace UI actions with custom gameplay actions.
 	# var direction = Input.get_action_strength("move_up" - "move_down")
