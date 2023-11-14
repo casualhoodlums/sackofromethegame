@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://lex5q2xpjuyx"]
 
 [ext_resource type="Script" path="res://src/Player.gd" id="1_r5rox"]
-[ext_resource type="Texture2D" uid="uid://dgcuuxx8b0w3d" path="res://assets/player_placeholder.png" id="2_irtdg"]
+[ext_resource type="Texture2D" uid="uid://c1qinaxej048o" path="res://assets/characters/placeholderman.png" id="2_ubhm2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k3u7n"]
-size = Vector2(32, 64)
+size = Vector2(32, 19)
 
 [node name="World" type="Node2D"]
 
@@ -13,8 +13,9 @@ motion_mode = 1
 script = ExtResource("1_r5rox")
 
 [node name="PlayerCollison" type="CollisionShape2D" parent="Player"]
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_k3u7n")
 
 [node name="PlayerSprite" type="Sprite2D" parent="Player"]
 texture_filter = 1
-texture = ExtResource("2_irtdg")
+texture = ExtResource("2_ubhm2")
