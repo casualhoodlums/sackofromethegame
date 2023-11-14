@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgcuuxx8b0w3d"
-path="res://.godot/imported/player_placeholder.png-e544856644adedafe5910ecdf959d03d.ctex"
+uid="uid://c1qinaxej048o"
+path="res://.godot/imported/placeholderman.png-68675c589c302b2dd2794fffe71fed30.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player_placeholder.png"
-dest_files=["res://.godot/imported/player_placeholder.png-e544856644adedafe5910ecdf959d03d.ctex"]
+source_file="res://Art/Characters/placeholderman.png"
+dest_files=["res://.godot/imported/placeholderman.png-68675c589c302b2dd2794fffe71fed30.ctex"]
 
 [params]
 
