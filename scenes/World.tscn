@@ -1,12 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://lex5q2xpjuyx"]
+[gd_scene load_steps=4 format=3 uid="uid://lex5q2xpjuyx"]
 
-[ext_resource type="PackedScene" uid="uid://bi7xauranhaqw" path="res://scenes/Player.tscn" id="1_y80fc"]
-[ext_resource type="PackedScene" uid="uid://dbbufgbswsv31" path="res://scenes/Streets.tscn" id="3_0r3go"]
+[ext_resource type="PackedScene" uid="uid://bi7xauranhaqw" path="res://Scenes/Characters/Player.tscn" id="1_b3nlr"]
+[ext_resource type="PackedScene" uid="uid://dbbufgbswsv31" path="res://Scenes/Streets.tscn" id="2_s3i3p"]
+[ext_resource type="PackedScene" uid="uid://b1ithexv03104" path="res://Scenes/Characters/BasicEnemyMan.tscn" id="3_oeseq"]
 
 [node name="World" type="Node2D"]
 position = Vector2(161, 567)
 
-[node name="Player" parent="." instance=ExtResource("1_y80fc")]
+[node name="Player" parent="." instance=ExtResource("1_b3nlr")]
 
-[node name="Ground" parent="." instance=ExtResource("3_0r3go")]
+[node name="BasicEnemyMan" parent="." instance=ExtResource("3_oeseq")]
+
+[node name="Ground" parent="." instance=ExtResource("2_s3i3p")]
 metadata/_edit_lock_ = true

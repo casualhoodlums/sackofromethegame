@@ -1,0 +1,33 @@
+[gd_scene load_steps=7 format=3 uid="uid://b1ithexv03104"]
+
+[ext_resource type="Script" path="res://Source/Characters/BasicEnemyMan.gd" id="1_06dvi"]
+[ext_resource type="Texture2D" uid="uid://c1qinaxej048o" path="res://Art/Characters/placeholderman.png" id="1_d0j50"]
+[ext_resource type="Script" path="res://Source/Hurtbox.gd" id="2_gbfol"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k53bm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5akdp"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ttd0c"]
+blend_mode = 1
+
+[node name="BasicEnemyMan" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_06dvi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_k53bm")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("2_gbfol")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("RectangleShape2D_5akdp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("CanvasItemMaterial_ttd0c")
+texture = ExtResource("1_d0j50")
+
+[connection signal="area_entered" from="Hurtbox" to="Hurtbox" method="_on_area_entered"]
