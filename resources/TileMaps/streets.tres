@@ -1,6 +1,7 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://cthveab2tf3s2"]
+[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://cthveab2tf3s2"]
 
 [ext_resource type="Texture2D" uid="uid://ckwv1nnn8owpg" path="res://Art/Textures/placeholderstreets.png" id="1_oenvw"]
+[ext_resource type="Texture2D" uid="uid://c80x2hahe70fx" path="res://Art/Textures/grass.png" id="2_pepyj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kjffl"]
 texture = ExtResource("1_oenvw")
@@ -9,5 +10,13 @@ texture = ExtResource("1_oenvw")
 0:1/0 = 0
 1:1/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dsppe"]
+texture = ExtResource("2_pepyj")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
 [resource]
 sources/0 = SubResource("TileSetAtlasSource_kjffl")
+sources/1 = SubResource("TileSetAtlasSource_dsppe")
