@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://lex5q2xpjuyx"]
 
-[ext_resource type="PackedScene" uid="uid://bi7xauranhaqw" path="res://Scenes/Player.tscn" id="1_y80fc"]
-[ext_resource type="PackedScene" uid="uid://dbbufgbswsv31" path="res://Scenes/Streets.tscn" id="3_0r3go"]
+[ext_resource type="PackedScene" uid="uid://bi7xauranhaqw" path="res://scenes/Player.tscn" id="1_y80fc"]
+[ext_resource type="PackedScene" uid="uid://dbbufgbswsv31" path="res://scenes/Streets.tscn" id="3_0r3go"]
 
 [node name="World" type="Node2D"]
 position = Vector2(161, 567)
