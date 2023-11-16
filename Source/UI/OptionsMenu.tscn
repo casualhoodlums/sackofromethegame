@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyxtje6r6tmvc"]
+
+[ext_resource type="Script" path="res://Source/UI/OptionsMenu.gd" id="1_4mhpb"]
+
+[sub_resource type="SystemFont" id="SystemFont_rx0s1"]
+font_weight = 450
+hinting = 2
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_xpfnb"]
+font = SubResource("SystemFont_rx0s1")
+font_size = 28
+outline_size = 14
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 20
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(5, 5)
+
+[node name="OptionsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4mhpb")
+
+[node name="OptionsCanvas" type="CanvasLayer" parent="."]
+
+[node name="OptionsContainer" type="VBoxContainer" parent="OptionsCanvas"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Title" type="Label" parent="OptionsCanvas/OptionsContainer"]
+layout_mode = 2
+text = "THERE ARE NO OPTIONS LMAO"
+label_settings = SubResource("LabelSettings_xpfnb")
+horizontal_alignment = 1

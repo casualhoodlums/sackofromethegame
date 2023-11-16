@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://djflj7k7oln58"]
+
+[ext_resource type="Script" path="res://Source/UI/PauseMenu.gd" id="1_2jf33"]
+
+[node name="PauseMenu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_2jf33")
+
+[node name="PauseCanvas" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="PauseContainer" type="VBoxContainer" parent="PauseCanvas"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -33.0
+offset_right = 48.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainMenu" type="Button" parent="PauseCanvas/PauseContainer"]
+layout_mode = 2
+text = "Main Menu
+"
+
+[node name="Options" type="Button" parent="PauseCanvas/PauseContainer"]
+visible = false
+layout_mode = 2
+text = "Options"
+
+[node name="Quit" type="Button" parent="PauseCanvas/PauseContainer"]
+layout_mode = 2
+text = "Quit Game"
+
+[connection signal="pressed" from="PauseCanvas/PauseContainer/MainMenu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="PauseCanvas/PauseContainer/Quit" to="." method="_on_quit_pressed"]
