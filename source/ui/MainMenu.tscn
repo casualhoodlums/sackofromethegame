@@ -1,0 +1,91 @@
+[gd_scene load_steps=6 format=3 uid="uid://e5prmql4bwln"]
+
+[ext_resource type="Script" path="res://source/ui/MainMenu.gd" id="1_t72x2"]
+[ext_resource type="Texture2D" uid="uid://bpg1nvucb3163" path="res://art/ui/baptiste-forey-baptiste-forey-baptiste-forey-concept-art-illustration-battle-sack-epic-landscape-concept-art-history-temple-rome-roman-visigoth-realistic-environment.jpg" id="2_igc5h"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_5tjat"]
+
+[sub_resource type="SystemFont" id="SystemFont_4h7xw"]
+font_weight = 450
+hinting = 2
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_ovcdt"]
+font = SubResource("SystemFont_4h7xw")
+font_size = 28
+outline_size = 14
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 20
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(5, 5)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t72x2")
+
+[node name="MenuCanvas" type="CanvasLayer" parent="."]
+
+[node name="ButtonContainer" type="VBoxContainer" parent="MenuCanvas"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -121.0
+offset_right = 249.0
+offset_bottom = -20.0
+grow_vertical = 0
+
+[node name="Play" type="Button" parent="MenuCanvas/ButtonContainer"]
+layout_mode = 2
+text = "Play"
+icon = SubResource("ImageTexture_5tjat")
+
+[node name="Options" type="Button" parent="MenuCanvas/ButtonContainer"]
+layout_mode = 2
+text = "Options"
+
+[node name="Exit" type="Button" parent="MenuCanvas/ButtonContainer"]
+layout_mode = 2
+text = "Exit"
+
+[node name="ImageCanvas" type="CanvasLayer" parent="MenuCanvas"]
+layer = 0
+
+[node name="BackgroundImage" type="TextureRect" parent="MenuCanvas/ImageCanvas"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_igc5h")
+expand_mode = 2
+
+[node name="TitleContainer" type="VBoxContainer" parent="MenuCanvas"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Title" type="Label" parent="MenuCanvas/TitleContainer"]
+layout_mode = 2
+text = "THE SACK OF ROME \"THE GAME\""
+label_settings = SubResource("LabelSettings_ovcdt")
+horizontal_alignment = 1
+
+[connection signal="pressed" from="MenuCanvas/ButtonContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MenuCanvas/ButtonContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="MenuCanvas/ButtonContainer/Exit" to="." method="_on_exit_pressed"]
