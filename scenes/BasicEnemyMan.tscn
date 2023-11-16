@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://dw8mkcvbg7r6"]
+
+[ext_resource type="Texture2D" uid="uid://c2q5rcc4gv0c1" path="res://art/characters/stab_anim1.png" id="1_l3y21"]
+[ext_resource type="Script" path="res://source/characters/BasicEnemyMan.gd" id="1_q5wwb"]
+[ext_resource type="Script" path="res://source/characters/Hurtbox.gd" id="2_6glk4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uia5v"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ka1ls"]
+
+[node name="BasicEnemyMan" type="CharacterBody2D"]
+script = ExtResource("1_q5wwb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_l3y21")
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("2_6glk4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0, 5)
+shape = SubResource("CircleShape2D_uia5v")
+
+[node name="EnemyCollision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5)
+shape = SubResource("CircleShape2D_ka1ls")
+
+[connection signal="area_entered" from="Hitbox" to="Hitbox" method="_on_area_entered"]
