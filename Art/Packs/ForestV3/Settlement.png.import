@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://do5b22umobnfi"
-path="res://.godot/imported/Settlement.png-283522689718ac471eb8a018b0baec13.ctex"
+path="res://.godot/imported/Settlement.png-6518e6ffefce2f945e26101293ead674.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Packs/ForestV3/Settlement.png"
-dest_files=["res://.godot/imported/Settlement.png-283522689718ac471eb8a018b0baec13.ctex"]
+source_file="res://art/packs/forestV3/Settlement.png"
+dest_files=["res://.godot/imported/Settlement.png-6518e6ffefce2f945e26101293ead674.ctex"]
 
 [params]
 

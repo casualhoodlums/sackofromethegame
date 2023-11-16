@@ -1,17 +1,17 @@
 [gd_scene load_steps=5 format=3 uid="uid://lex5q2xpjuyx"]
 
-[ext_resource type="Script" path="res://Source/World.gd" id="1_t8jkc"]
-[ext_resource type="PackedScene" uid="uid://bi7xauranhaqw" path="res://Scenes/Player.tscn" id="2_gmr5k"]
-[ext_resource type="PackedScene" uid="uid://dbbufgbswsv31" path="res://Scenes/Streets.tscn" id="3_c50jc"]
-[ext_resource type="PackedScene" uid="uid://djflj7k7oln58" path="res://Source/UI/PauseMenu.tscn" id="4_0sy0y"]
+[ext_resource type="Script" path="res://source/World.gd" id="1_xdipj"]
+[ext_resource type="PackedScene" uid="uid://bi7xauranhaqw" path="res://scenes/Player.tscn" id="2_mq67x"]
+[ext_resource type="PackedScene" uid="uid://dbbufgbswsv31" path="res://scenes/Streets.tscn" id="3_gaouk"]
+[ext_resource type="PackedScene" uid="uid://djflj7k7oln58" path="res://source/ui/PauseMenu.tscn" id="4_hur3n"]
 
 [node name="World" type="Node2D"]
 position = Vector2(161, 567)
-script = ExtResource("1_t8jkc")
+script = ExtResource("1_xdipj")
 
-[node name="Player" parent="." instance=ExtResource("2_gmr5k")]
+[node name="Player" parent="." instance=ExtResource("2_mq67x")]
 
-[node name="Ground" parent="." instance=ExtResource("3_c50jc")]
+[node name="Ground" parent="." instance=ExtResource("3_gaouk")]
 metadata/_edit_lock_ = true
 
-[node name="PauseMenu" parent="." instance=ExtResource("4_0sy0y")]
+[node name="PauseMenu" parent="." instance=ExtResource("4_hur3n")]

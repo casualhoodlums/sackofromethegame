@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://f3g386hx1irr"
-path="res://.godot/imported/Water Tileset.png-d8934f08782930831ca5b043d4b4f042.ctex"
+path="res://.godot/imported/Water Tileset.png-7e2a8282cf4a72349bdaa7b99af57057.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Packs/ForestV3/Water Tileset.png"
-dest_files=["res://.godot/imported/Water Tileset.png-d8934f08782930831ca5b043d4b4f042.ctex"]
+source_file="res://art/packs/forestV3/Water Tileset.png"
+dest_files=["res://.godot/imported/Water Tileset.png-7e2a8282cf4a72349bdaa7b99af57057.ctex"]
 
 [params]
 

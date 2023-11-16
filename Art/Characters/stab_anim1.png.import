@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2q5rcc4gv0c1"
-path="res://.godot/imported/stab_anim1.png-5318ae2dab9d21273a89f6852221e8e4.ctex"
+path="res://.godot/imported/stab_anim1.png-af93f2ac305a9e85ea4431684aa096ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Characters/stab_anim1.png"
-dest_files=["res://.godot/imported/stab_anim1.png-5318ae2dab9d21273a89f6852221e8e4.ctex"]
+source_file="res://art/characters/stab_anim1.png"
+dest_files=["res://.godot/imported/stab_anim1.png-af93f2ac305a9e85ea4431684aa096ce.ctex"]
 
 [params]
 

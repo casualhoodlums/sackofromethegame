@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://e5prmql4bwln"]
 
-[ext_resource type="Script" path="res://Source/UI/MainMenu.gd" id="1_hbtvp"]
-[ext_resource type="Texture2D" uid="uid://bpg1nvucb3163" path="res://Art/UI/baptiste-forey-baptiste-forey-baptiste-forey-concept-art-illustration-battle-sack-epic-landscape-concept-art-history-temple-rome-roman-visigoth-realistic-environment.jpg" id="2_txtg8"]
+[ext_resource type="Script" path="res://source/ui/MainMenu.gd" id="1_t72x2"]
+[ext_resource type="Texture2D" uid="uid://bpg1nvucb3163" path="res://art/ui/baptiste-forey-baptiste-forey-baptiste-forey-concept-art-illustration-battle-sack-epic-landscape-concept-art-history-temple-rome-roman-visigoth-realistic-environment.jpg" id="2_igc5h"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_5tjat"]
 
@@ -26,7 +26,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_hbtvp")
+script = ExtResource("1_t72x2")
 
 [node name="MenuCanvas" type="CanvasLayer" parent="."]
 
@@ -62,7 +62,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_txtg8")
+texture = ExtResource("2_igc5h")
 expand_mode = 2
 
 [node name="TitleContainer" type="VBoxContainer" parent="MenuCanvas"]

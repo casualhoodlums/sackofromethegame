@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dyxtje6r6tmvc"]
 
-[ext_resource type="Script" path="res://Source/UI/OptionsMenu.gd" id="1_4mhpb"]
+[ext_resource type="Script" path="res://source/ui/OptionsMenu.gd" id="1_711dw"]
 
 [sub_resource type="SystemFont" id="SystemFont_rx0s1"]
 font_weight = 450
@@ -23,7 +23,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_4mhpb")
+script = ExtResource("1_711dw")
 
 [node name="OptionsCanvas" type="CanvasLayer" parent="."]
 

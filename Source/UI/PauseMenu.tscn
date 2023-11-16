@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://djflj7k7oln58"]
 
-[ext_resource type="Script" path="res://Source/UI/PauseMenu.gd" id="1_2jf33"]
+[ext_resource type="Script" path="res://source/ui/PauseMenu.gd" id="1_y32bm"]
 
 [node name="PauseMenu" type="Control"]
 process_mode = 3
@@ -14,7 +14,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-script = ExtResource("1_2jf33")
+script = ExtResource("1_y32bm")
 
 [node name="PauseCanvas" type="CanvasLayer" parent="."]
 visible = false
