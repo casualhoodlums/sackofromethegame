@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://lex5q2xpjuyx"]
+[gd_scene load_steps=6 format=3 uid="uid://lex5q2xpjuyx"]
 
 [ext_resource type="Script" path="res://source/World.gd" id="1_xdipj"]
 [ext_resource type="PackedScene" uid="uid://bi7xauranhaqw" path="res://scenes/Player.tscn" id="2_mq67x"]
 [ext_resource type="PackedScene" uid="uid://dbbufgbswsv31" path="res://scenes/Streets.tscn" id="3_gaouk"]
 [ext_resource type="PackedScene" uid="uid://djflj7k7oln58" path="res://source/ui/PauseMenu.tscn" id="4_hur3n"]
+[ext_resource type="PackedScene" uid="uid://duqlkg3ou6pw7" path="res://source/ui/DevMenu.tscn" id="5_ij7ps"]
 
 [node name="World" type="Node2D"]
 position = Vector2(161, 567)
@@ -15,3 +16,5 @@ script = ExtResource("1_xdipj")
 metadata/_edit_lock_ = true
 
 [node name="PauseMenu" parent="." instance=ExtResource("4_hur3n")]
+
+[node name="DevMenu" parent="." instance=ExtResource("5_ij7ps")]

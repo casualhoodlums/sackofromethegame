@@ -80,7 +80,6 @@ animations = [{
 }]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a3mbt"]
-load_path = "res://.godot/imported/placeholderman.png-68675c589c302b2dd2794fffe71fed30.ctex"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6p83f"]
 size = Vector2(22.009, 19.2477)
