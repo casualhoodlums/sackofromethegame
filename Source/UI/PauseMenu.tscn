@@ -32,6 +32,10 @@ offset_bottom = 33.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="Resume" type="Button" parent="PauseCanvas/PauseContainer"]
+layout_mode = 2
+text = "Resume"
+
 [node name="MainMenu" type="Button" parent="PauseCanvas/PauseContainer"]
 layout_mode = 2
 text = "Main Menu
@@ -46,5 +50,6 @@ text = "Options"
 layout_mode = 2
 text = "Quit Game"
 
+[connection signal="pressed" from="PauseCanvas/PauseContainer/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="PauseCanvas/PauseContainer/MainMenu" to="." method="_on_main_menu_pressed"]
 [connection signal="pressed" from="PauseCanvas/PauseContainer/Quit" to="." method="_on_quit_pressed"]
