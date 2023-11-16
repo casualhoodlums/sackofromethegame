@@ -74,7 +74,6 @@ shape = SubResource("RectangleShape2D_6p83f")
 disabled = true
 
 [node name="AttackTimer" type="Timer" parent="."]
-one_shot = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 

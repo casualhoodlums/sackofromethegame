@@ -1,5 +1,6 @@
 extends Control
 
+signal spawn_man
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,10 +13,10 @@ func _process(delta):
 
 
 func _on_spawn_man_pressed():
-	print("OK IM SPAWNING")
-	# Interesting Code
+	print("OK IM SPAWNING");
+	emit_signal("spawn_man");
 	
 
 func _on_invincible_pressed():
-	print("OK IM INVINCIBLE")
+	print("OK IM INVINCIBLE");
 	# Interesting Code

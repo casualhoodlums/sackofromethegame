@@ -1,8 +1,11 @@
 extends Node2D
 
+var scene = preload("res://scenes/BasicEnemyMan.tscn")
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass
+	# pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -22,3 +25,8 @@ func toggle_dev_menu():
 		$DevMenu/DevMenuCanvas.visible = true;
 	else:
 		$DevMenu/DevMenuCanvas.visible = false;
+
+
+func _on_dev_menu_spawn_man():
+	var instance = scene.instantiate()
+	add_child(instance)

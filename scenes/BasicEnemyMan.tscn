@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dw8mkcvbg7r6"]
+[gd_scene load_steps=6 format=3 uid="uid://c73fkh4b5yp06"]
 
 [ext_resource type="Texture2D" uid="uid://c2q5rcc4gv0c1" path="res://art/characters/stab_anim1.png" id="1_l3y21"]
 [ext_resource type="Script" path="res://source/characters/BasicEnemyMan.gd" id="1_q5wwb"]
