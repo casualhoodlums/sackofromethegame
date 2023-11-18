@@ -1,0 +1,95 @@
+[gd_scene load_steps=13 format=3 uid="uid://bfpn5i4f6kvsc"]
+
+[ext_resource type="Texture2D" uid="uid://brp38xf2rk5y5" path="res://art/Objects/animatedcastledoors.png" id="1_5587n"]
+[ext_resource type="Script" path="res://source/Objects/Door.gd" id="1_ovdfk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f476m"]
+size = Vector2(64, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sd356"]
+atlas = ExtResource("1_5587n")
+region = Rect2(256, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54gjg"]
+atlas = ExtResource("1_5587n")
+region = Rect2(192, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_etfed"]
+atlas = ExtResource("1_5587n")
+region = Rect2(128, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xbt3x"]
+atlas = ExtResource("1_5587n")
+region = Rect2(64, 0, 64, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wxffx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sd356")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_54gjg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_etfed")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xbt3x")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h6hpr"]
+atlas = ExtResource("1_5587n")
+region = Rect2(0, 0, 64, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bu2f4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h6hpr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ylnyx"]
+size = Vector2(5.5, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8dw3f"]
+size = Vector2(64, 12)
+
+[node name="Door" type="StaticBody2D"]
+script = ExtResource("1_ovdfk")
+
+[node name="Trigger" type="Area2D" parent="."]
+position = Vector2(0, 32)
+collision_layer = 0
+collision_mask = 2
+
+[node name="TriggerBox" type="CollisionShape2D" parent="Trigger"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_f476m")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_wxffx")
+
+[node name="DoorFrame" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_bu2f4")
+
+[node name="Edge1" type="CollisionShape2D" parent="."]
+position = Vector2(-29.75, 42)
+shape = SubResource("RectangleShape2D_ylnyx")
+
+[node name="Edge2" type="CollisionShape2D" parent="."]
+position = Vector2(29, 42)
+shape = SubResource("RectangleShape2D_ylnyx")
+
+[node name="DoorClosed" type="CollisionShape2D" parent="."]
+position = Vector2(0, 42)
+shape = SubResource("RectangleShape2D_8dw3f")
+disabled = true
