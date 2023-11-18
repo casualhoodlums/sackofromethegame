@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://bfpn5i4f6kvsc"]
 
-[ext_resource type="Texture2D" uid="uid://brp38xf2rk5y5" path="res://art/Objects/animatedcastledoors.png" id="1_5587n"]
-[ext_resource type="Script" path="res://source/Objects/Door.gd" id="1_ovdfk"]
+[ext_resource type="Texture2D" uid="uid://brp38xf2rk5y5" path="res://art/objects/animatedcastledoors.png" id="1_5587n"]
+[ext_resource type="Script" path="res://source/objects/Door.gd" id="1_ovdfk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f476m"]
 size = Vector2(64, 8)

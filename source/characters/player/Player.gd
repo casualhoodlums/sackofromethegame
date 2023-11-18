@@ -77,4 +77,4 @@ func _on_attack_timer_timeout():
 	main_attack_hitbox.hide()
 	hitbox_collision.disabled = true
 	current_state = PlayerState.IDLE
-	print("hidden")
+	# print("hidden")
